@@ -43,6 +43,7 @@ const BENEFITS = [
   margin-top: 4rem;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 2rem;
 }
 
 .hero-content {
@@ -52,13 +53,8 @@ const BENEFITS = [
 }
 
 .hero-content h1 {
-  font-feature-settings: "case" on;
   font-size: 4.2rem;
-  font-weight: 700;
   line-height: 54px;
-  color: var(--neutral-800);
-  margin-bottom: 1.6rem;
-  font-family: "FiraGO";
 }
 
 .hero-content p {
@@ -88,5 +84,11 @@ const BENEFITS = [
   display: flex;
   align-items: center;
   gap: 1.2rem;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+  }
 }
 </style>

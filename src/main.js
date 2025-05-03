@@ -1,7 +1,8 @@
-import "./assets/base.css";
-import "primeicons/primeicons.css";
-
 import { createApp } from "vue";
 import App from "./App.vue";
+import "./assets/main.css";
+import "primeicons/primeicons.css";
 
-createApp(App).mount("#app");
+const app = createApp(App);
+
+app.mount("#app");

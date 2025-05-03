@@ -4,6 +4,7 @@ import { BiArrowRightShort } from "oh-vue-icons/icons";
 import SiteHeader from "./components/Header.vue";
 import Button from "./components/ui/Button.vue";
 import Hero from "./components/Hero.vue";
+import Loan from "./components/Loan.vue";
 
 addIcons(BiArrowRightShort);
 </script>
@@ -22,6 +23,7 @@ addIcons(BiArrowRightShort);
 
   <main>
     <Hero />
+    <Loan />
     <!-- <TheWelcome /> -->
   </main>
 </template>
