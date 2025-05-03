@@ -2,7 +2,14 @@
   <div class="slider-wrapper">
     <h1>შეავსე სესხის განაცხადი</h1>
     <p>ლორემ იპსუმ განუმეორებელი ეღრიჯებოდა დაებღერტყნათ</p>
-    <div style="display: flex; flex-direction: column">
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        max-width: 50rem;
+        width: 100%;
+      "
+    >
       <div class="slider-wrapper__header">
         <span class="slider-wrapper__header-title"
           >რა თანხის სესხება გსურთ</span
@@ -22,7 +29,7 @@ import Button from "./ui/Button.vue";
 
 <style scoped>
 .slider-wrapper {
-  width: 1200px;
+  max-width: 1200px;
   margin-top: 13rem;
   margin-bottom: 13rem;
   padding: 4.8rem 11.2rem;
@@ -80,5 +87,15 @@ import Button from "./ui/Button.vue";
 
 .slider-button {
   margin-top: 5.3rem;
+}
+
+@media (max-width: 640px) {
+  .slider-wrapper {
+    padding: 2rem 2rem;
+    border-radius: 0;
+  }
+  .slider-wrapper h1 {
+    text-align: center;
+  }
 }
 </style>

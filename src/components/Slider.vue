@@ -94,7 +94,6 @@ onUnmounted(() => {
 <style scoped>
 .slider-container {
   position: relative;
-  width: 50rem;
   height: 100%;
   cursor: pointer;
   touch-action: none;
@@ -157,4 +156,5 @@ onUnmounted(() => {
   left: 50%;
   transform: translateX(-50%) translateY(-100%);
 }
+
 </style>

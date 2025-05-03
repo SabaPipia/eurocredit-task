@@ -30,7 +30,7 @@ const BENEFITS = [
         </li>
       </ul>
     </div>
-    <img :src="heroImg" alt="" />
+    <img class="hero-img" :src="heroImg" alt="" />
   </section>
 </template>
 
@@ -43,7 +43,7 @@ const BENEFITS = [
   margin-top: 4rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
 }
 
 .hero-content {
@@ -86,9 +86,49 @@ const BENEFITS = [
   gap: 1.2rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1250px) {
   .hero {
+    margin: 4rem 10rem;
     flex-direction: column;
+  }
+
+  .hero-img {
+    width: 50%;
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin: 4rem 5rem;
+    flex-direction: column;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 3.6rem;
+    line-height: 48px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    margin: 2rem 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+    line-height: 24px;
   }
 }
 </style>

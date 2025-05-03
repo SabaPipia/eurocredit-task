@@ -25,7 +25,9 @@ import HeaderMenu from "./HeaderMenu.vue";
           <Button variant="icon" class="header-user-btn">
             <i class="pi pi-user header-pi-user"></i>
           </Button>
-          <Button size="small" variant="primary">სესხის მოთხოვნა</Button>
+          <Button class="header-cta-btn" size="small" variant="primary"
+            >სესხის მოთხოვნა</Button
+          >
         </div>
       </div>
     </div>
@@ -47,7 +49,7 @@ import HeaderMenu from "./HeaderMenu.vue";
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 24px 112px;
+  padding: 2.4rem 11.2rem;
   max-width: 1440px;
 }
 
@@ -110,5 +112,29 @@ import HeaderMenu from "./HeaderMenu.vue";
 .header-CTA-wrapper {
   display: flex;
   gap: 0.8rem;
+}
+
+@media (max-width: 1024px) {
+  .header-left img {
+    display: none;
+  }
+  .header-devider {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    padding: 4rem 5rem;
+  }
+}
+@media (max-width: 640px) {
+  .header-content {
+    padding: 2rem 2rem;
+  }
+
+  .header-cta-btn {
+    display: none;
+  }
 }
 </style>

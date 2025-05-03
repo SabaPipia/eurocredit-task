@@ -32,10 +32,7 @@ addIcons(BiArrowRightShort);
 .promo-banner {
   font-family: "FiraGo";
   background-color: var(--brand-dark-blue);
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
-  padding-left: 11.2rem;
-  padding-right: 11.2rem;
+  padding: 1.2rem 0;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 600;

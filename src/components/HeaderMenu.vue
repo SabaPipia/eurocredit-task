@@ -51,7 +51,12 @@ const NAVITEMS = [
 .header-nav-list {
   display: flex;
   list-style: none;
-  gap: 4.8rem;
+  flex-wrap: wrap;
+  row-gap: 1.6rem;
+  column-gap: 4.8rem;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .header-nav-list a {
@@ -69,5 +74,18 @@ const NAVITEMS = [
   font-weight: 500;
   line-height: normal;
   color: var(--neutral-700);
+  font-family: "FiraGO";
+}
+
+@media (max-width: 1024px) {
+  .header-nav {
+    padding: 1.6rem 5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-nav {
+    padding: 1.6rem 2rem;
+  }
 }
 </style>
