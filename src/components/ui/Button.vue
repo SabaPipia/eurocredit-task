@@ -27,6 +27,7 @@ defineProps({
 
 <style scoped>
 .button {
+  font-family: "FiraGO";
   border: none;
   border-radius: 100%;
   display: flex;
@@ -52,10 +53,12 @@ defineProps({
 }
 
 .large {
+  font-weight: 500;
   padding: 1.8rem 2.6rem;
 }
 
 .small {
+  font-weight: 400;
   padding: 1.4rem 1.8rem;
 }
 </style>

@@ -21,7 +21,7 @@ const BENEFITS = [
         მორგებულ სესხს, განსაკუთრებული და მოსახერხებელი პირობებით.
       </p>
       <div>
-        <Button variant="primary">სესხის მოთხოვნა</Button>
+        <Button variant="primary">მოითხოვე სესხი</Button>
       </div>
       <ul class="hero-benefits-list">
         <li v-for="(benefit, index) in BENEFITS" :key="index">
@@ -52,18 +52,23 @@ const BENEFITS = [
 }
 
 .hero-content h1 {
+  font-feature-settings: "case" on;
   font-size: 4.2rem;
   font-weight: 700;
   line-height: 54px;
   color: var(--neutral-800);
   margin-bottom: 1.6rem;
+  font-family: "FiraGO";
 }
 
 .hero-content p {
+  font-family: "ABeeZee";
   color: var(--neutral-700);
   font-size: 1.8rem;
   line-height: 2.9rem;
   margin-bottom: 2.4rem;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .hero-benefits-list {
@@ -76,7 +81,9 @@ const BENEFITS = [
 }
 
 .hero-benefits-list li {
+  font-family: "ABeeZee";
   font-size: 1.6rem;
+  font-weight: 400;
   color: var(--gray-600);
   display: flex;
   align-items: center;

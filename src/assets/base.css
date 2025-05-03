@@ -1,6 +1,39 @@
 /* color palette from <https://github.com/vuejs/theme> */
 /* import "primeicons/primeicons.css"; */
 
+@font-face {
+  font-family: "FiraGO";
+  src: url("./fonts/FiraGo/FiraGO-Regular.woff2") format("woff2"),
+    url("./fonts/FiraGo/FiraGO-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "FiraGO";
+  src: url("./fonts/FiraGo/FiraGO-Bold.woff2") format("woff2"),
+    url("./fonts/FiraGo/FiraGO-Bold.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "FiraGO";
+  src: url("./fonts/FiraGo/FiraGO-SemiBold.woff2") format("woff2"),
+    url("./fonts/FiraGo/FiraGO-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "FiraGO";
+  src: url("./fonts/FiraGo/FiraGO-Bold.woff2") format("woff2"),
+    url("./fonts/FiraGo/FiraGO-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "ABeeZee";
+  src: url("./fonts/ABeeZee/ABeeZee-Regular.ttf") format("truetype");
+}
+
 *,
 *::before,
 *::after {

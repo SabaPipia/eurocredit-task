@@ -65,6 +65,7 @@ import HeaderMenu from "./HeaderMenu.vue";
 }
 
 .header-phone {
+  font-family: "FiraGO";
   font-size: 1.4rem;
   font-weight: 500;
   line-height: normal;

@@ -28,6 +28,7 @@ addIcons(BiArrowRightShort);
 
 <style scoped>
 .promo-banner {
+  font-family: "FiraGo";
   background-color: var(--brand-dark-blue);
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
