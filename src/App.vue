@@ -1,17 +1,23 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-import TheWelcome from "./components/TheWelcome.vue";
+import { OhVueIcon, addIcons } from "oh-vue-icons";
+import { BiArrowRightShort } from "oh-vue-icons/icons";
+import SiteHeader from "./components/Header.vue";
+import Button from "./components/ui/Button.vue";
+
+addIcons(BiArrowRightShort);
 </script>
 
 <template>
-  <div></div>
-  <header>
-    <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div> -->
-  </header>
+  <div class="promo-banner">
+    <span>
+      საზაფხულო კამპანია დაიწყო! აიღე სესხი 3 თვით 0%, წინასწარი შენატანის
+      გარეშე!
+    </span>
+    <Button variant="icon">
+      <i class="pi pi-arrow-right" style="color: white"></i>
+    </Button>
+  </div>
+  <SiteHeader />
 
   <main>
     <!-- <TheWelcome /> -->
@@ -19,8 +25,22 @@ import TheWelcome from "./components/TheWelcome.vue";
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
+.promo-banner {
+  background-color: var(--brand-dark-blue);
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-left: 11.2rem;
+  padding-right: 11.2rem;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--neutral-0);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
 }
 
 .logo {
@@ -29,7 +49,7 @@ header {
 }
 
 @media (min-width: 1024px) {
-  header {
+  /* header {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
@@ -43,6 +63,6 @@ header {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
-  }
+  } */
 }
 </style>
