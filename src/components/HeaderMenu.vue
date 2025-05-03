@@ -2,7 +2,7 @@
   <nav class="header-nav">
     <div>
       <ul class="header-nav-list">
-        <a href="#" v-for="(item, index) in navItems" :key="index">
+        <a href="#" v-for="(item, index) in NAVITEMS" :key="index">
           <li>{{ item.name }}</li>
         </a>
       </ul>
@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-const navItems = [
+const NAVITEMS = [
   {
     name: "ავტო სესხი",
     href: "#",

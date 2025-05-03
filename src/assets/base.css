@@ -25,4 +25,7 @@ html {
   --gray-600: #475467;
 
   --text-color: #ffffff;
+
+  --success-100: #d1fadf;
+  --success-500: #12b76a;
 }

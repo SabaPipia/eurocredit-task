@@ -25,7 +25,7 @@ import HeaderMenu from "./HeaderMenu.vue";
           <Button variant="icon" class="header-user-btn">
             <i class="pi pi-user header-pi-user"></i>
           </Button>
-          <Button variant="primary">სესხის მოთხოვნა</Button>
+          <Button size="small" variant="primary">სესხის მოთხოვნა</Button>
         </div>
       </div>
     </div>
