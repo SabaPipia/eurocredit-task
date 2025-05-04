@@ -1,19 +1,17 @@
 <script setup>
-import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { BiArrowRightShort } from "oh-vue-icons/icons";
+import { useI18n } from "vue-i18n";
 import SiteHeader from "./components/Header.vue";
 import Button from "./components/ui/Button.vue";
 import Hero from "./components/Hero.vue";
 import Loan from "./components/Loan.vue";
 
-addIcons(BiArrowRightShort);
+const { t } = useI18n();
 </script>
 
 <template>
   <div class="promo-banner">
     <span>
-      საზაფხულო კამპანია დაიწყო! აიღე სესხი 3 თვით 0%, წინასწარი შენატანის
-      გარეშე!
+      {{ t("promo") }}
     </span>
     <Button variant="icon">
       <i class="pi pi-arrow-right" style="color: white"></i>
@@ -24,7 +22,6 @@ addIcons(BiArrowRightShort);
   <main>
     <Hero />
     <Loan />
-    <!-- <TheWelcome /> -->
   </main>
 </template>
 
@@ -48,23 +45,5 @@ addIcons(BiArrowRightShort);
 .logo {
   display: block;
   margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  /* header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  } */
 }
 </style>

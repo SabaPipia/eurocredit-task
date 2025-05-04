@@ -1,3 +1,18 @@
+<script setup>
+import { useI18n } from "vue-i18n";
+import { computed } from "vue";
+
+const { t } = useI18n();
+const NAVITEMS = computed(() => [
+  { name: t("header.menu.autoLoan"), href: "#" },
+  { name: t("header.menu.businessLoan"), href: "#" },
+  { name: t("header.menu.selfEmployedLoan"), href: "#" },
+  { name: t("header.menu.aboutUs"), href: "#" },
+  { name: t("header.menu.blog"), href: "#" },
+  { name: t("header.menu.contact"), href: "#" },
+]);
+</script>
+
 <template>
   <nav class="header-nav">
     <div>
@@ -9,35 +24,6 @@
     </div>
   </nav>
 </template>
-
-<script setup>
-const NAVITEMS = [
-  {
-    name: "ავტო სესხი",
-    href: "#",
-  },
-  {
-    name: "ბიზნეს სესხი",
-    href: "#",
-  },
-  {
-    name: "თვითდასაქმებულთათვის",
-    href: "#",
-  },
-  {
-    name: "ჩვენ შესახებ",
-    href: "#",
-  },
-  {
-    name: "ბლოგი",
-    href: "#",
-  },
-  {
-    name: "კონტაქტი",
-    href: "#",
-  },
-];
-</script>
 
 <style scoped>
 .header-nav {

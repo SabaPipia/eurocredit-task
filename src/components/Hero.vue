@@ -2,26 +2,28 @@
 import heroImg from "@/assets/hero_img.png";
 import Button from "./ui/Button.vue";
 import heroCheck from "@/assets/check_icon.png";
+import { useI18n } from "vue-i18n";
+import { computed } from "vue";
 
-const BENEFITS = [
-  "სპეციალურად შენ საქმიანობაზე მორგებული პირობები!",
-  "სესხის მიღების სწრაფი და მარტივი პროცესი!",
-  "მხოლოდ ავტომობილის უზრუნველყოფით!",
-  "ნებიესმიერი საკრედიტო ისტორიით!",
-];
+const { t } = useI18n();
+
+const BENEFITS = computed(() => [
+  t("hero.benefits.1"),
+  t("hero.benefits.2"),
+  t("hero.benefits.3"),
+  t("hero.benefits.4"),
+]);
 </script>
 
 <template>
   <section class="hero">
     <div class="hero-content">
-      <h1>სესხი თვითდასაქმებულთათვის</h1>
+      <h1>{{ t("hero.heading") }}</h1>
       <p>
-        თუ ხარ თვითდასაქმებული და საქმიანობის განსავითარებლად დამატებითი
-        ფინანსები გჭირდება, ჩვენ გთავაზობთ სპეციალურად შენს საჭიროებებზე
-        მორგებულ სესხს, განსაკუთრებული და მოსახერხებელი პირობებით.
+        {{ t("hero.subheading") }}
       </p>
       <div>
-        <Button variant="primary">მოითხოვე სესხი</Button>
+        <Button variant="primary">{{ t("hero.button") }}</Button>
       </div>
       <ul class="hero-benefits-list">
         <li v-for="(benefit, index) in BENEFITS" :key="index">
@@ -43,7 +45,6 @@ const BENEFITS = [
   margin-top: 4rem;
   margin-left: auto;
   margin-right: auto;
-  /* padding: 0 2rem; */
 }
 
 .hero-content {

@@ -1,8 +1,11 @@
 <script setup>
+import { useI18n } from "vue-i18n";
 import logo from "@/assets/eurocredit_logo.png";
-import languageIcon from "@/assets/geo_flag.jpg";
 import Button from "./ui/Button.vue";
 import HeaderMenu from "./HeaderMenu.vue";
+import LanguageSwitcher from "./LanguageSwitcher.vue";
+
+const { t } = useI18n();
 </script>
 
 <template>
@@ -17,17 +20,14 @@ import HeaderMenu from "./HeaderMenu.vue";
         </div>
       </div>
       <div class="header-right">
-        <div class="header-language">
-          <span>ქარ</span>
-          <img :src="languageIcon" alt="geo_flag" />
-        </div>
+        <LanguageSwitcher />
         <div class="header-CTA-wrapper">
           <Button variant="icon" class="header-user-btn">
             <i class="pi pi-user header-pi-user"></i>
           </Button>
-          <Button class="header-cta-btn" size="small" variant="primary"
-            >სესხის მოთხოვნა</Button
-          >
+          <Button class="header-cta-btn" size="small" variant="primary">{{
+            t("header.CTA")
+          }}</Button>
         </div>
       </div>
     </div>
@@ -87,17 +87,6 @@ import HeaderMenu from "./HeaderMenu.vue";
   display: flex;
   align-items: center;
   gap: 3.2rem;
-}
-
-.header-language {
-  display: flex;
-  gap: 0.6rem;
-}
-
-.header-language span {
-  color: var(--neutral-700);
-  font-size: 1.4rem;
-  line-height: normal;
 }
 
 .header-user-btn {

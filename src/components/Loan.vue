@@ -1,7 +1,15 @@
+<script setup>
+import Slider from "./Slider.vue";
+import Button from "./ui/Button.vue";
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
+</script>
+
 <template>
   <div class="slider-wrapper">
-    <h1>შეავსე სესხის განაცხადი</h1>
-    <p>ლორემ იპსუმ განუმეორებელი ეღრიჯებოდა დაებღერტყნათ</p>
+    <h1>{{ t("loan.heading") }}</h1>
+    <p>{{ t("loan.subheading") }}</p>
     <div
       style="
         display: flex;
@@ -11,21 +19,18 @@
       "
     >
       <div class="slider-wrapper__header">
-        <span class="slider-wrapper__header-title"
-          >რა თანხის სესხება გსურთ</span
+        <span class="slider-wrapper__header-title">{{
+          t("loan.howMuch")
+        }}</span>
+        <span class="slider-wrapper__header-max"
+          >{{ t("loan.max") }}: 24 000₾</span
         >
-        <span class="slider-wrapper__header-max">მაქს: 24 000₾</span>
       </div>
       <Slider />
-      <Button class="slider-button">სესხის აღება</Button>
+      <Button class="slider-button">{{ t("loan.button") }}</Button>
     </div>
   </div>
 </template>
-
-<script setup>
-import Slider from "./Slider.vue";
-import Button from "./ui/Button.vue";
-</script>
 
 <style scoped>
 .slider-wrapper {

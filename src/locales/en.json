@@ -1,0 +1,33 @@
+{
+  "promo": "Summer campaign has started! Take out a loan for 3 months at 0%, without a down payment!",
+  "header": {
+    "language": "Eng",
+    "CTA": "Request Loan",
+    "menu": {
+      "autoLoan": "Auto Loan",
+      "businessLoan": "Business Loan",
+      "selfEmployedLoan": "Self Employed Loan",
+      "aboutUs": "About Us",
+      "blog": "Blog",
+      "contact": "Contact"
+    }
+  },
+  "hero": {
+    "heading": "Loan for the self-employed",
+    "subheading": "If you are self-employed and need additional finances to develop your business, we offer a loan tailored specifically to your needs, with special and convenient terms.",
+    "button": "Request Loan",
+    "benefits": {
+      "1": "Special benefits for your business!",
+      "2": "Fast and smooth loan process!",
+      "3": "Only with your car!",
+      "4": "Any credit history!"
+    }
+  },
+  "loan": {
+    "heading": "Fill out the loan application.",
+    "subheading": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+    "howMuch": "How much loan do you need?",
+    "max": "Max",
+    "button": "Request Loan"
+  }
+}
