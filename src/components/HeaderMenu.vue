@@ -3,6 +3,7 @@ import { useI18n } from "vue-i18n";
 import { computed } from "vue";
 
 const { t } = useI18n();
+
 const NAVITEMS = computed(() => [
   { name: t("header.menu.autoLoan"), href: "#" },
   { name: t("header.menu.businessLoan"), href: "#" },

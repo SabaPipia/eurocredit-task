@@ -1,6 +1,7 @@
 <script setup>
 import { useI18n } from "vue-i18n";
 import geoFlag from "@/assets/geo_flag.jpg";
+import enFlag from "@/assets/united-kingdom_flag.png";
 
 const { locale, t } = useI18n();
 
@@ -12,7 +13,7 @@ const toggleLanguage = () => {
 <template>
   <div class="language-switcher" @click="toggleLanguage">
     <span>{{ t("header.language") }}</span>
-    <img :src="geoFlag" alt="language_flag" />
+    <img :src="locale === 'ka' ? geoFlag : enFlag" alt="language_flag" />
   </div>
 </template>
 
